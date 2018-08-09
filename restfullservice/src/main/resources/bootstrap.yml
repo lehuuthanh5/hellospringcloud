@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: anticonfigclient
+  profiles:
+    active: dev9092
+  cloud:
+    config:
+      uri: http://localhost:8081
+      username: root
+      password: s3cr3t
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
